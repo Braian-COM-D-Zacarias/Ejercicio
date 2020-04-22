@@ -1,0 +1,56 @@
+Accion Ejercicio 2.1.18 es
+	                                                          Hola. Juan y Matias mataban pajaritos.FDS
+	Ambiente
+		Sec, Sal: secuencia de caracter;
+		v: caracter
+
+	Proceso
+		Arr(Sec);
+		Avz(Sec, v);
+		Crear(Sal);
+		Mientras NFDS(Sec) hacer
+			Mientras v <> "." hacer
+				Si v = " " entonces
+					Avz(Sec, v);
+				FinMientras
+				
+				Mientras v <> "." y v <> " " hacer
+					Avz(Sec, v);
+				FinMientras
+				
+				Si v = " " entonces
+					Avz(Sec, v);
+				FinSi
+					
+				Si v = "M" entonces
+					Mientras (v <> ".") y (v <> " ") hacer
+						Esc(Sal, v);
+						Avz(Sec, v);
+					FinMientras
+					Esc(sal, " ");
+				Sino
+					Mientras (v <> ".") y (v <> " ") hacer
+						Avz(Sec, v);
+					FinMientras
+				FinSi
+			FinMientras
+			Avz(Sec, v);
+		FinMientras
+		
+		Cerrar(Sec);
+		Cerrar(Sal);
+		
+	FinAccion
+
+					
+	integrantes:
+		Braian Zacarias
+		Gabriel Gomez
+		Elisabeth Gauna
+		Johana Bovero
+		Larcher Jordan
+		Agustin Lautaro Montaño
+		Palacios Leandro
+		Tobias Medina Jurich
+		Ezequien Almiron Galan
+		
